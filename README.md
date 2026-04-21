@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Intern Assessment
 
-## Getting Started
+Next.js + Tailwind CSS implementation of the EduNOW training and development landing page.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 (App Router)
+- React 19
+- Tailwind CSS 4
+- `next/font`
+- `next/image`
+
+## Figma / design source
+
+The original assessment referenced a Figma file. Direct access to the Figma link was blocked in this environment, so the page was implemented from the provided desktop design screenshot and the assessment PDF requirements.
+
+## Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Useful scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev
+pnpm lint
+pnpm build
+pnpm start
+```
 
-## Learn More
+## Live URL
 
-To learn more about Next.js, take a look at the following resources:
+Pending final deployment after review.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design decisions and assumptions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Built as a single marketing landing page with reusable section components under `/components`.
+- Used a plum / blush brand palette to stay close to the provided screenshot.
+- Used remote photography through `next/image` because the original image assets were not provided.
+- Implemented a responsive structure for mobile, tablet, and desktop based on the visible desktop composition and inferred layout behavior.
+- Preserved the major desktop section rhythm from the reference:
+  - header
+  - hero
+  - alternating services sections
+  - featured dark program block
+  - transformation hub section
+  - consultant training block
+  - testimonials
+  - CTA + footer
 
-## Deploy on Vercel
+## Known gaps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- The original Figma file was not directly accessible from this environment, so exact pixel matching may still need manual refinement against the live design file.
+- Tablet and mobile layouts were inferred because only the desktop screenshot was available.
+- Final public deployment still needs to be attached.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Accessibility notes
+
+- Semantic landmarks are used: `header`, `main`, `section`, and `footer`.
+- Buttons and links are keyboard-focusable with visible focus treatment.
+- Images include meaningful alt text.
+
+## AI disclosure
+
+AI assistance was used during implementation. The final code was reviewed, edited, and validated locally with:
+
+```bash
+pnpm lint
+pnpm build
+```
