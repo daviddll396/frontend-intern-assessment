@@ -1,21 +1,26 @@
+import Image from "next/image";
+
 const testimonials = [
   {
     name: "Anita Okafor",
     role: "HR Business Partner",
     quote:
-      "EduNOW brought structure, warmth, and real business clarity into our learning approach. The programmes felt customised instead of recycled.",
+      "TOBAMS brought structure, warmth, and real business clarity into our learning approach. The programmes felt customised instead of recycled.",
+    avatar: "/tobams/testimonial-1.png",
   },
   {
     name: "Chinedu Adebayo",
     role: "Programme Lead",
     quote:
       "The delivery was practical, elegant, and genuinely useful. Our team left with language, tools, and confidence we could apply immediately.",
+    avatar: "/tobams/testimonial-2.png",
   },
   {
     name: "Mariam Yusuf",
     role: "Operations Director",
     quote:
       "What stood out was the balance between strategic thinking and real implementation. It felt like a partner, not just a trainer, was in the room.",
+    avatar: "/tobams/testimonial-3.png",
   },
 ];
 
@@ -35,11 +40,14 @@ export function TestimonialsSection() {
               className="rounded-[28px] border border-[var(--border-soft)] bg-white p-7 shadow-[0_12px_35px_rgba(45,18,36,0.06)]"
             >
               <div className="flex items-center gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--surface-tint)] font-sans text-lg font-extrabold text-[var(--brand-700)]">
-                  {testimonial.name
-                    .split(" ")
-                    .map((part) => part[0])
-                    .join("")}
+                <div className="relative h-14 w-14 overflow-hidden rounded-full ring-2 ring-[var(--surface-tint)]">
+                  <Image
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    fill
+                    className="object-cover"
+                    sizes="56px"
+                  />
                 </div>
                 <div>
                   <h3 className="font-sans text-lg font-bold text-[var(--foreground)]">

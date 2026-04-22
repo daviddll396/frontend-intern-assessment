@@ -25,7 +25,7 @@ export function ServiceSplitSection({
 }: ServiceSplitSectionProps) {
   const textColumn = (
     <div className="max-w-xl">
-      <p className="eyebrow">EduNOW Services</p>
+      <p className="eyebrow">TOBAMS Services</p>
       <h2 className="section-title mt-4">{title}</h2>
       <p className="section-copy mt-5">{description}</p>
       <ul className="mt-6 space-y-3">

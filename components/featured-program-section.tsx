@@ -14,8 +14,8 @@ export function FeaturedProgramSection() {
         <div className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
           <div className="relative h-[320px] overflow-hidden rounded-[28px] border border-white/10 sm:h-[420px]">
             <Image
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
-              alt="Professionals reviewing a tablet during a management development discussion"
+              src="/tobams/management-development.png"
+              alt="Management development session with professionals reviewing materials together"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 45vw"

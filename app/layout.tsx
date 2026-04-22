@@ -15,9 +15,9 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "EduNOW | Training and Development",
+  title: "TOBAMS Group | Training and Development",
   description:
-    "EduNOW training and development services page built with Next.js and Tailwind CSS.",
+    "TOBAMS Group training and development services page built with Next.js and Tailwind CSS.",
 };
 
 export default function RootLayout({

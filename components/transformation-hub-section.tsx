@@ -27,8 +27,8 @@ export function TransformationHubSection() {
           <div className="space-y-6">
             <div className="relative h-[320px] overflow-hidden rounded-[28px] border border-[var(--border-soft)] sm:h-[380px]">
               <Image
-                src="https://images.unsplash.com/photo-1516321310764-8d3f1a8e6c8c?auto=format&fit=crop&w=900&q=80"
-                alt="Creative professional in a colourful studio environment representing transformation and innovation"
+                src="/tobams/transformation-hub.png"
+                alt="TOBAMS transformation hub team collaborating in a vibrant strategy session"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"

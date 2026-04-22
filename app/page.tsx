@@ -12,29 +12,30 @@ import { TestimonialsSection } from "@/components/testimonials-section";
 import { SiteFooter } from "@/components/site-footer";
 
 const primaryNav = [
-  "Home",
-  "About Us",
-  "Services",
+  "About",
+  "What We Do",
+  "Jobs",
   "Projects",
-  "T & D Area",
-  "Contact",
+  "TG Academy",
+  "Strategic Partnership",
+  "Pricing",
+  "Book a Consultation",
 ];
 
 const services: ServiceSplitSectionProps[] = [
   {
     title: "Learning Management System",
     description:
-      "Our learning management system helps organisations centralise learning delivery, track progress, and scale development experiences across departments. From onboarding to leadership growth, it gives teams a structured way to build capability without sacrificing visibility.",
+      "Our learning management system helps organisations centralise learning delivery, track progress, and scale development experiences across teams. It gives decision-makers visibility, gives learners structure, and turns training into something measurable instead of vague corporate theatre.",
     bullets: [
-      "Custom onboarding and compliance paths",
-      "Instructor-led and self-paced course support",
-      "Progress tracking, reporting, and learner analytics",
-      "Branded portals for enterprise learning experiences",
+      "Centralised course delivery and learner records",
+      "Role-based pathways for onboarding and compliance",
+      "Instructor-led, virtual, and self-paced support",
+      "Practical analytics for progress, completion, and impact",
     ],
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80",
+    image: "/tobams/lms-team.png",
     imageAlt:
-      "Two business professionals smiling during a corporate training conversation",
+      "TOBAMS team members collaborating during a learning management system discussion",
     ctaLabel: "Learn More",
     imageLeft: true,
     accent: "tinted",
@@ -43,50 +44,47 @@ const services: ServiceSplitSectionProps[] = [
   {
     title: "Corporate Trainings",
     description:
-      "We design and facilitate practical training sessions that strengthen workplace performance. Every engagement is tailored to the context of the organisation, helping teams build confidence, clarity, and measurable capability where it matters most.",
+      "We design and facilitate practical corporate training programmes that sharpen performance where it actually matters: communication, leadership, service delivery, stakeholder confidence, and execution. The work is tailored, direct, and built for real organisations rather than generic workshop fluff.",
     bullets: [
-      "Leadership development programmes",
-      "Communication and presentation mastery",
-      "Sales, service, and stakeholder management",
-      "Team effectiveness and behavioural capability",
+      "Leadership and management capability building",
+      "Communication and presentation training",
+      "Team effectiveness and workplace performance",
+      "Client service and stakeholder management sessions",
     ],
-    image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
+    image: "/tobams/corporate-training.png",
     imageAlt:
-      "Corporate trainer presenting to professionals in a boardroom meeting",
+      "Corporate training session with a presenter and team in a boardroom",
     ctaLabel: "Book a Consultation",
   },
   {
     title: "Personalised Individual Training",
     description:
-      "For professionals who need focused development, our personalised training offers one-on-one or small-group support built around specific goals. The result is a highly relevant learning experience with direct, actionable impact.",
+      "For professionals who need focused support, our personalised individual training creates a tighter, more relevant learning experience. It is built around specific growth goals, not generic content dumps, so the result is sharper confidence, stronger communication, and visible development.",
     bullets: [
-      "Executive presence and confidence building",
-      "Business writing and communication refinement",
-      "Career growth and personal development coaching",
-      "Tailored capability mapping and action planning",
+      "One-on-one capability development",
+      "Targeted communication and executive presence support",
+      "Career growth and performance coaching",
+      "Action plans tailored to the learner’s actual goals",
     ],
-    image:
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
+    image: "/tobams/individual-training.png",
     imageAlt:
-      "Hands-on workshop session with participants seated around a training table",
+      "Individual training session with facilitator and participant engaged in discussion",
     ctaLabel: "Read More",
     imageLeft: true,
   },
   {
     title: "Capacity Development",
     description:
-      "We help organisations strengthen the systems, skills, and strategic mindset needed for long-term performance. Our approach goes beyond short-term workshops by aligning training with growth, transformation, and sustainable execution.",
+      "We help organisations strengthen systems, skills, and strategic discipline for long-term results. Instead of stopping at theory, we align training with institutional growth, transformation goals, and operational follow-through so capability improvement sticks.",
     bullets: [
-      "Institutional capability strengthening",
-      "Programme and team performance improvement",
-      "Leadership alignment and strategic planning",
-      "Change readiness and operational resilience",
+      "Institutional and programme capability strengthening",
+      "Strategic planning and alignment support",
+      "Change readiness and resilience building",
+      "Performance improvement across teams and functions",
     ],
-    image:
-      "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80",
+    image: "/tobams/capacity-development.png",
     imageAlt:
-      "Facilitator presenting ideas to a seated group during a capacity development workshop",
+      "Capacity development workshop with participants collaborating around a table",
     ctaLabel: "Learn More",
   },
 ];

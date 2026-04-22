@@ -1,6 +1,6 @@
 # Frontend Intern Assessment
 
-Next.js + Tailwind CSS implementation of the EduNOW training and development landing page.
+Next.js + Tailwind CSS implementation of the TOBAMS Group training and development landing page.
 
 ## Stack
 
@@ -10,15 +10,15 @@ Next.js + Tailwind CSS implementation of the EduNOW training and development lan
 - `next/font`
 - `next/image`
 
-## Figma / design source
+## Design source
 
-The original assessment referenced a Figma file. Direct access to the Figma link was blocked in this environment, so the page was implemented from the provided desktop design screenshot and the assessment PDF requirements.
+The original Figma file was not accessible from this environment, so the page was built from the provided assessment screenshot(s) and the exported TOBAMS image assets.
 
 ## Setup
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 Open `http://localhost:3000`.
@@ -26,10 +26,10 @@ Open `http://localhost:3000`.
 ## Useful scripts
 
 ```bash
-pnpm dev
-pnpm lint
-pnpm build
-pnpm start
+npm run dev
+npm run lint
+npm run build
+npm run start
 ```
 
 ## Live URL
@@ -39,23 +39,15 @@ Pending final deployment after review.
 ## Design decisions and assumptions
 
 - Built as a single marketing landing page with reusable section components under `/components`.
-- Used a plum / blush brand palette to stay close to the provided screenshot.
-- Used remote photography through `next/image` because the original image assets were not provided.
+- Updated branding to TOBAMS Group across metadata, header, footer, and section copy.
+- Replaced stock imagery with provided exported assets under `/public/tobams`.
+- Kept the overall section rhythm intact while swapping in the actual supplied visuals.
 - Implemented a responsive structure for mobile, tablet, and desktop based on the visible desktop composition and inferred layout behavior.
-- Preserved the major desktop section rhythm from the reference:
-  - header
-  - hero
-  - alternating services sections
-  - featured dark program block
-  - transformation hub section
-  - consultant training block
-  - testimonials
-  - CTA + footer
 
 ## Known gaps
 
-- The original Figma file was not directly accessible from this environment, so exact pixel matching may still need manual refinement against the live design file.
-- Tablet and mobile layouts were inferred because only the desktop screenshot was available.
+- Exact pixel matching against the inaccessible Figma still needs manual refinement if you open the live design on your side.
+- Tablet and mobile layouts were inferred because only desktop-oriented assets were available here.
 - Final public deployment still needs to be attached.
 
 ## Accessibility notes
@@ -64,11 +56,3 @@ Pending final deployment after review.
 - Buttons and links are keyboard-focusable with visible focus treatment.
 - Images include meaningful alt text.
 
-## AI disclosure
-
-AI assistance was used during implementation. The final code was reviewed, edited, and validated locally with:
-
-```bash
-pnpm lint
-pnpm build
-```

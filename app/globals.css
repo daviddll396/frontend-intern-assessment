@@ -54,6 +54,10 @@ a {
     transform 180ms ease;
 }
 
+.header-account-button {
+  @apply gap-2.5;
+}
+
 button:focus-visible,
 a:focus-visible,
 input:focus-visible {
